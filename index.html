@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bouncing Arrow | Imtiaz</title>
+
+<style>
+    body{
+    	background-color:black;
+    }
+
+    .arrow{
+      
+      border-radius:50px;
+      position: relative;
+      font-size: 48px;
+      text-align: center;
+      transform: rotate(90deg);
+      animation: bouncearrow 1s infinite;
+      color: #ffc728;
+    }
+
+@-webkit-keyframes bouncearrow{
+    0%{top: 0px;}
+    50%{top: 20px; color: #000000;}
+    100%{top: 0px;}
+}
+
+@keyframes bouncearrow{
+    0%{top: 0px;}
+    50%{top: 20px; color: #000000;}
+    100%{top: 0px;}
+}
+.bac{
+	width:100%;
+	height:450px;
+	background-image: url(bac.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	border-radius:12px;
+}
+</style>
+</head>
+
+
+ <body>
+<div class="bac">
+	
+</div>
+<div class="arrow">&#8674;</div>
+</body>
+</html>
